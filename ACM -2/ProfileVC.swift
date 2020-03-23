@@ -17,7 +17,7 @@ struct ProfileVC: View {
             Spacer()
             addButton()
             Spacer()
-            }.navigationBarTitle("New Profile").background(Color(red: 0.802, green: 0.89, blue: 1.0))
+            }.navigationBarTitle("New Profile").background(Color("profileVC"))
         .edgesIgnoringSafeArea(.all)
         }
     }

@@ -13,11 +13,12 @@ struct profileForm: View {
     @State var birthday = ""
     @State var phone = ""
     @State var gender = 0
+    var names = ["Name 💁🏻‍♂️","Name 💁🏼‍♀️"]
     var genders = ["Male","Female"]
     var body: some View {
         VStack(spacing:31) {
             HStack {
-                Text("Name 💁🏻‍♂️")
+                Text(self.names[self.gender])
                 Spacer()
                 textView(name: $name)
             }
@@ -55,7 +56,7 @@ struct profileForm: View {
         .padding(.horizontal,18)
         .font(Font.system(size: 27, weight: .medium))
         .frame(minWidth: 0, maxWidth: .infinity)
-        .frame(height: 335, alignment: .center).background(Color(red: 0.757, green: 0.824, blue: 0.918))
+        .frame(height: 335, alignment: .center).background(Color("formView"))
         .cornerRadius(26)
                     .shadow(color: Color(hue: 0.001, saturation: 0.0, brightness: 0.0, opacity: 0.5), radius: 1, x: 1, y: 2)
         .overlay(
