@@ -10,7 +10,22 @@ import SwiftUI
 
 struct ProfileVC: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        addButton()
+    }
+}
+
+struct addButton: View {
+    var body: some View{
+        Button(action: {
+            print("add clicked")
+        }){
+            HStack {
+                Image(systemName: "plus.rectangle")
+                Text("ADD")
+            }.foregroundColor(.white)
+             .frame(width: 200, height: 50, alignment: .center)
+             .background(Color(red: 0.105, green: 0.14, blue: 0.423)).cornerRadius(26)
+        }
     }
 }
 
