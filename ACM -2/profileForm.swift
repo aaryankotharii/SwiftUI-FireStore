@@ -9,9 +9,63 @@
 import SwiftUI
 
 struct profileForm: View {
+    @State var name = ""
+    @State var birthday = ""
+    @State var phone = ""
+    @State var gender = 0
+    var genders = ["Male","Female"]
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            HStack {
+                Text("Name")
+                Spacer()
+                TextField("", text: $name)
+                    .frame(width: 200, height: 34)
+                    .background(Color.white)
+                    .cornerRadius(4)
+                    .overlay(
+                    RoundedRectangle(cornerRadius: 4)
+                    .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+            }
+            HStack {
+                Text("Birthday")
+                Spacer()
+                TextField("", text: $name)
+                    .frame(width: 200, height: 34)
+                    .background(Color.white)
+                    .cornerRadius(4)
+                    .overlay(
+                    RoundedRectangle(cornerRadius: 4)
+                    .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+            }
+            HStack {
+                Text("Phone")
+                Spacer()
+                TextField("", text: $name)
+                    .frame(width: 200, height: 34)
+                    .background(Color.white)
+                    .cornerRadius(4)
+                    .overlay(
+                    RoundedRectangle(cornerRadius: 4)
+                    .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+            }
+            HStack {
+                Text("Gender")
+                Picker("",selection: $gender) {
+                ForEach(0..<genders.count){
+                        Text("\(self.genders[$0])")
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+            }
+            HStack{
+                Text("Location")
+                Spacer()
+                Button(action: {
+                    print("tap pressed")
+                }){
+                    Image(systemName: "plus.circle")
+                }
+            }
         }
         .frame(minWidth: 0, maxWidth: .infinity)
         .frame(height: 384, alignment: .center).background(Color(red: 0.696, green: 0.769, blue: 0.866))
