@@ -13,6 +13,7 @@
 		5B63019F242881BB00BE6236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B63019E242881BB00BE6236 /* Assets.xcassets */; };
 		5B6301A2242881BB00BE6236 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6301A1242881BB00BE6236 /* Preview Assets.xcassets */; };
 		5B6301A5242881BB00BE6236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6301A3242881BB00BE6236 /* LaunchScreen.storyboard */; };
+		5B6301AD242881C900BE6236 /* profileForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301AC242881C900BE6236 /* profileForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5B6301A1242881BB00BE6236 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B6301A4242881BB00BE6236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B6301A6242881BC00BE6236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6301AC242881C900BE6236 /* profileForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5B6301A3242881BB00BE6236 /* LaunchScreen.storyboard */,
 				5B6301A6242881BC00BE6236 /* Info.plist */,
 				5B6301A0242881BB00BE6236 /* Preview Content */,
+				5B6301AC242881C900BE6236 /* profileForm.swift */,
 			);
 			path = "ACM -2";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B630199242881B800BE6236 /* AppDelegate.swift in Sources */,
+				5B6301AD242881C900BE6236 /* profileForm.swift in Sources */,
 				5B63019B242881B800BE6236 /* SceneDelegate.swift in Sources */,
 				5B63019D242881B800BE6236 /* ContentView.swift in Sources */,
 			);
