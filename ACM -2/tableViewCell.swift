@@ -14,6 +14,7 @@ struct tableViewCell: View {
     var body: some View {
         HStack() {
             Image("Profile Picture")
+                .renderingMode(.original)
                 .resizable()
                 .frame(width: 76, height: 76)
                 .padding(.horizontal, 10.0)

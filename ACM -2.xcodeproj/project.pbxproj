@@ -17,6 +17,9 @@
 		5B6301AF24288E6400BE6236 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301AE24288E6400BE6236 /* ProfileVC.swift */; };
 		5B6301B52428D0AA00BE6236 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301B42428D0AA00BE6236 /* tableViewCell.swift */; };
 		5B6301B72428E2FD00BE6236 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301B62428E2FD00BE6236 /* MapView.swift */; };
+		5B6301B92428E54200BE6236 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301B82428E54200BE6236 /* mapVC.swift */; };
+		5B6301BB2428EB9E00BE6236 /* tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301BA2428EB9E00BE6236 /* tableView.swift */; };
+		5B6301BD2429021F00BE6236 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6301BC2429021F00BE6236 /* UserDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		5B6301AE24288E6400BE6236 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		5B6301B42428D0AA00BE6236 /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
 		5B6301B62428E2FD00BE6236 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5B6301B82428E54200BE6236 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
+		5B6301BA2428EB9E00BE6236 /* tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableView.swift; sourceTree = "<group>"; };
+		5B6301BC2429021F00BE6236 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				5B6301AE24288E6400BE6236 /* ProfileVC.swift */,
 				5B6301B42428D0AA00BE6236 /* tableViewCell.swift */,
 				5B6301B62428E2FD00BE6236 /* MapView.swift */,
+				5B6301B82428E54200BE6236 /* mapVC.swift */,
+				5B6301BA2428EB9E00BE6236 /* tableView.swift */,
+				5B6301BC2429021F00BE6236 /* UserDetail.swift */,
 			);
 			path = "ACM -2";
 			sourceTree = "<group>";
@@ -161,8 +170,11 @@
 				5B6301B72428E2FD00BE6236 /* MapView.swift in Sources */,
 				5B6301AF24288E6400BE6236 /* ProfileVC.swift in Sources */,
 				5B630199242881B800BE6236 /* AppDelegate.swift in Sources */,
+				5B6301BD2429021F00BE6236 /* UserDetail.swift in Sources */,
 				5B6301AD242881C900BE6236 /* profileForm.swift in Sources */,
 				5B63019B242881B800BE6236 /* SceneDelegate.swift in Sources */,
+				5B6301BB2428EB9E00BE6236 /* tableView.swift in Sources */,
+				5B6301B92428E54200BE6236 /* mapVC.swift in Sources */,
 				5B63019D242881B800BE6236 /* ContentView.swift in Sources */,
 				5B6301B52428D0AA00BE6236 /* tableViewCell.swift in Sources */,
 			);

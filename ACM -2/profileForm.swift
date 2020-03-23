@@ -15,6 +15,8 @@ struct profileForm: View {
     @State var gender = 0
     var names = ["Name 💁🏻‍♂️","Name 💁🏼‍♀️"]
     var genders = ["Male","Female"]
+    
+    @State var showingDetail = false
     var body: some View {
         VStack(spacing:31) {
             HStack {
@@ -48,8 +50,11 @@ struct profileForm: View {
                 Spacer()
                 Button(action: {
                     print("tap pressed")
+                    self.showingDetail.toggle()
                 }){
                     Image(systemName: "plus.circle")
+                }.sheet(isPresented: $showingDetail){
+                    mapVC()
                 }
             }
         }
