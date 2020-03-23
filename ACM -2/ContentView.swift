@@ -9,23 +9,34 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showingDetail = false
     var body: some View {
-        NavigationView{
             VStack {
+                NavigationBar()
+                Spacer()
                 Text("Hello, World!")
-            }.navigationBarItems(trailing: Button(action: showProfile){
+                Spacer()
+        }
+    }
+
+}
+
+struct NavigationBar: View{
+    @State var showingDetail = false
+    var body: some View{
+        HStack{
+            Text("Welcome")
+                .font(.system(size: 33, weight: .bold))
+            Spacer()
+             Button(action: showProfile){
                 Image(systemName: "plus.circle")
                 .resizable()
                 .frame(width: 31, height: 31, alignment: .center)
-                .offset(x: 0, y: 45)
-                    //.padding(.top, 90)
                     .foregroundColor(.green)
-            }.sheet(isPresented: $showingDetail){
+             }.padding(.trailing, 10.0).sheet(isPresented: $showingDetail){
                     ProfileVC()
-            }).navigationBarTitle("Welcome")
-        }//.padding(.top,0)
-            .edgesIgnoringSafeArea(.all).offset(x: 0, y: -1)
+                }
+        }
+        .padding(.horizontal, 10.0)
     }
     func showProfile(){
         self.showingDetail.toggle()
