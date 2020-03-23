@@ -13,7 +13,7 @@ struct ContentView: View {
             VStack {
                 NavigationBar()
                     .padding(.top, 55.0)
-                ScrollView{
+                ScrollView(showsIndicators: false){
                 tableView()
                     .padding(.top, 5.0)
                 }
