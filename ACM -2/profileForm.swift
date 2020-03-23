@@ -72,13 +72,14 @@ struct profileForm: View {
         .padding(.horizontal,18)
         .font(Font.system(size: 27, weight: .medium))
         .frame(minWidth: 0, maxWidth: .infinity)
-        .frame(height: 335, alignment: .center).background(Color(red: 0.696, green: 0.769, blue: 0.866))
+        .frame(height: 335, alignment: .center).background(Color(red: 0.757, green: 0.824, blue: 0.918))
         .cornerRadius(26)
+                    .shadow(color: Color(hue: 0.001, saturation: 0.0, brightness: 0.0, opacity: 0.5), radius: 1, x: 1, y: 2)
         .overlay(
             RoundedRectangle(cornerRadius: 26)
             .stroke(Color(red: 0.549, green: 0.58, blue: 0.624), lineWidth: 2)
             )
-            .shadow(color: Color(hue: 0.001, saturation: 0.0, brightness: 0.0, opacity: 0.5), radius: 1, x: 1, y: 2)
+
             .padding(.horizontal, 18.0)
 
     }
