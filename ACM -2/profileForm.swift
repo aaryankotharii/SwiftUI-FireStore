@@ -19,43 +19,20 @@ struct profileForm: View {
             HStack {
                 Text("Name 💁🏻‍♂️")
                 Spacer()
-                TextField("", text: $name)
-                    .frame(width: 200, height: 34)
-                    .background(Color.white)
-                    .cornerRadius(4)
-                    .overlay(
-                    RoundedRectangle(cornerRadius: 4)
-                    .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
-                    .multilineTextAlignment(.trailing)
-                    .font(.system(size: 18, weight: .light))
+                textView(name: $name)
             }
             HStack {
                 Text("Birthday 🎂")
                     .font(.system(size: 26))
                     .fontWeight(.medium)
                 Spacer()
-                TextField("", text: $name)
-                    .frame(width: 200, height: 34)
-                    .background(Color.white)
-                    .cornerRadius(4)
-                    .overlay(
-                    RoundedRectangle(cornerRadius: 4)
-                    .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
-                .multilineTextAlignment(.trailing)
-                .font(.system(size: 18, weight: .light))
+                textView(name: $birthday)
             }
             HStack {
                 Text("Phone 📱")
                 Spacer()
-                TextField("", text: $name)
-                    .frame(width: 200, height: 34)
-                    .background(Color.white)
-                    .cornerRadius(4)
-                    .overlay(
-                    RoundedRectangle(cornerRadius: 4)
-                    .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
-                .multilineTextAlignment(.trailing)
-                    .font(.system(size: 18, weight: .light)).keyboardType(.phonePad)
+                textView(name: $phone)
+                    .keyboardType(.phonePad)
             }
             HStack {
                 Text("Gender 🚻")
@@ -85,9 +62,22 @@ struct profileForm: View {
             RoundedRectangle(cornerRadius: 26)
             .stroke(Color(red: 0.549, green: 0.58, blue: 0.624), lineWidth: 2)
             )
-
             .padding(.horizontal, 18.0)
+    }
+}
 
+struct textView : View{
+    @Binding var name : String
+    var body: some View{
+        TextField("", text: $name)
+              .frame(width: 200, height: 34)
+              .background(Color.white)
+              .cornerRadius(4)
+              .overlay(
+              RoundedRectangle(cornerRadius: 4)
+              .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+          .multilineTextAlignment(.trailing)
+          .font(.system(size: 18, weight: .light))
     }
 }
 
