@@ -12,10 +12,13 @@ struct ContentView: View {
     var body: some View {
             VStack {
                 NavigationBar()
+                    .padding(.top, 55.0)
+                ScrollView{
+                tableView()
+                    .padding(.top, 5.0)
+                }
                 Spacer()
-                Text("Hello, World!")
-                Spacer()
-        }
+            }.edgesIgnoringSafeArea(.all)
     }
 
 }
@@ -40,6 +43,17 @@ struct NavigationBar: View{
     }
     func showProfile(){
         self.showingDetail.toggle()
+    }
+}
+
+struct tableView: View{
+    var UserData = [["name":"ABCD","cityState":"Chittoor,AP"],["name":"Aaryan Kothari","cityState":"Mumbai,Maharashtra"],["name":"Person X","cityState":"Vellore,Tamil Nadu"],["name":"Test3","cityState":","],["name":"Test 2 ","cityState":"Sydney,NSW"],["name":"Person K ","cityState":"New York, NY"],["name":"Test ","cityState":"Paris,Île de France"]]
+    var body: some View{
+        VStack(spacing:0){
+            ForEach(UserData, id:\.self){i in
+                tableViewCell(name: i["name"] ?? "", cityState: i["cityState"] ?? "")
+            }
+        }
     }
 }
 

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct tableViewCell: View {
+    @State var name = "Aaryan Kothari"
+    @State var cityState =  "Mumbai, Maharashtra"
     var body: some View {
         HStack() {
             Image("Profile Picture")
@@ -16,9 +18,9 @@ struct tableViewCell: View {
                 .frame(width: 76, height: 76)
                 .padding(.horizontal, 10.0)
             VStack(alignment: .leading) {
-                Text("Aaryan Kothari")
+                Text(name)
                     .font(.system(size: 30, weight: .bold))
-                Text("Label")
+                Text(cityState)
                   .font(.system(size: 17, weight: .bold))
                 .foregroundColor(Color("city-state"))
             }
