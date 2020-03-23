@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView{
+            VStack {
+                Text("Hello, World!")
+            }.navigationBarItems(trailing: Button(action: {
+                print("plus")
+            }){
+                Image(systemName: "plus.circle")
+                .resizable()
+                .frame(width: 31, height: 31, alignment: .center)
+                .padding(.top, 90.0)
+                    .foregroundColor(.green)
+            }).navigationBarTitle("Welcome")
+        }
     }
 }
 
