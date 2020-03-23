@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ProfileVC: View {
     var body: some View {
-        addButton()
+        NavigationView{
+        VStack{
+            Spacer()
+            profileForm()
+            addButton()
+            Spacer()
+            }.navigationBarTitle("New Profile").background(Color(red: 0.802, green: 0.89, blue: 1.0))
+        .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
