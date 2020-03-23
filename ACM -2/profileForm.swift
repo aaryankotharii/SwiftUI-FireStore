@@ -17,7 +17,7 @@ struct profileForm: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Name")
+                Text("Name 💁🏻‍♂️")
                 Spacer()
                 TextField("", text: $name)
                     .frame(width: 200, height: 34)
@@ -28,7 +28,7 @@ struct profileForm: View {
                     .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
             }
             HStack {
-                Text("Birthday")
+                Text("Birthday 🎂")
                 Spacer()
                 TextField("", text: $name)
                     .frame(width: 200, height: 34)
@@ -39,7 +39,7 @@ struct profileForm: View {
                     .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
             }
             HStack {
-                Text("Phone")
+                Text("Phone 📱")
                 Spacer()
                 TextField("", text: $name)
                     .frame(width: 200, height: 34)
@@ -50,7 +50,7 @@ struct profileForm: View {
                     .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
             }
             HStack {
-                Text("Gender")
+                Text("Gender 🚻")
                 Picker("",selection: $gender) {
                 ForEach(0..<genders.count){
                         Text("\(self.genders[$0])")
@@ -58,7 +58,7 @@ struct profileForm: View {
                 }.pickerStyle(SegmentedPickerStyle())
             }
             HStack{
-                Text("Location")
+                Text("Location📍")
                 Spacer()
                 Button(action: {
                     print("tap pressed")
@@ -67,6 +67,7 @@ struct profileForm: View {
                 }
             }
         }
+        .font(Font.system(size: 27, weight: .medium))
         .frame(minWidth: 0, maxWidth: .infinity)
         .frame(height: 384, alignment: .center).background(Color(red: 0.696, green: 0.769, blue: 0.866))
         .cornerRadius(26)
