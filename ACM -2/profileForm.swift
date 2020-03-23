@@ -26,6 +26,8 @@ struct profileForm: View {
                     .overlay(
                     RoundedRectangle(cornerRadius: 4)
                     .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+                    .multilineTextAlignment(.trailing)
+                    .font(.system(size: 18, weight: .light))
             }
             HStack {
                 Text("Birthday 🎂")
@@ -39,6 +41,8 @@ struct profileForm: View {
                     .overlay(
                     RoundedRectangle(cornerRadius: 4)
                     .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+                .multilineTextAlignment(.trailing)
+                .font(.system(size: 18, weight: .light))
             }
             HStack {
                 Text("Phone 📱")
@@ -50,6 +54,8 @@ struct profileForm: View {
                     .overlay(
                     RoundedRectangle(cornerRadius: 4)
                     .stroke(Color(red: 0.592, green: 0.592, blue: 0.592), lineWidth: 1))
+                .multilineTextAlignment(.trailing)
+                    .font(.system(size: 18, weight: .light)).keyboardType(.phonePad)
             }
             HStack {
                 Text("Gender 🚻")

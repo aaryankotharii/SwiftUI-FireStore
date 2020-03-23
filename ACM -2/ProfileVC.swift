@@ -14,6 +14,7 @@ struct ProfileVC: View {
         VStack{
             Spacer()
             profileForm()
+            Spacer()
             addButton()
             Spacer()
             }.navigationBarTitle("New Profile").background(Color(red: 0.802, green: 0.89, blue: 1.0))
