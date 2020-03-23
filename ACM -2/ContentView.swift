@@ -11,17 +11,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            VStack {
+                ZStack{
+                    VStack {
                 NavigationBar()
-                    .padding(.top, 55.0)
-                Spacer()
-                ScrollView(showsIndicators: false){
+                        Spacer()
+                    }
                 tableView()
-                    .padding(.top, 5.0)
+                    .padding(.top, 70)
                 }
             }.edgesIgnoringSafeArea(.top)
         }
-    }
+    
 
 }
 

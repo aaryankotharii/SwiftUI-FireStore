@@ -11,9 +11,11 @@ import SwiftUI
 struct tableViewCell: View {
     @State var name = "Aaryan Kothari"
     @State var cityState =  "Mumbai, Maharashtra"
+    @State var profile = "0"
+    var profiles = ["Profile Picture","f"]
     var body: some View {
         HStack() {
-            Image("Profile Picture")
+            Image(profiles[Int(profile)!])
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 76, height: 76)
@@ -31,7 +33,6 @@ struct tableViewCell: View {
                 .resizable()
                 .frame(width: 20, height: 31)
                 .padding(.trailing,12)
-            
         }
         .frame(minWidth: .zero, maxWidth: .infinity)
         .frame(height: 100)

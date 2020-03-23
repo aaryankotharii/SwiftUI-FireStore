@@ -9,7 +9,8 @@
 import SwiftUI
 import MapKit
 
-struct mapVC: View { @Environment(\.presentationMode) var presentationMode
+struct mapVC: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack{
         VStack(spacing:0){
