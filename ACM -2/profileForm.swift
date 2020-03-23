@@ -15,7 +15,7 @@ struct profileForm: View {
     @State var gender = 0
     var genders = ["Male","Female"]
     var body: some View {
-        VStack {
+        VStack(spacing:31) {
             HStack {
                 Text("Name 💁🏻‍♂️")
                 Spacer()
@@ -29,6 +29,8 @@ struct profileForm: View {
             }
             HStack {
                 Text("Birthday 🎂")
+                    .font(.system(size: 26))
+                    .fontWeight(.medium)
                 Spacer()
                 TextField("", text: $name)
                     .frame(width: 200, height: 34)
@@ -67,9 +69,10 @@ struct profileForm: View {
                 }
             }
         }
+        .padding(.horizontal,18)
         .font(Font.system(size: 27, weight: .medium))
         .frame(minWidth: 0, maxWidth: .infinity)
-        .frame(height: 384, alignment: .center).background(Color(red: 0.696, green: 0.769, blue: 0.866))
+        .frame(height: 335, alignment: .center).background(Color(red: 0.696, green: 0.769, blue: 0.866))
         .cornerRadius(26)
         .overlay(
             RoundedRectangle(cornerRadius: 26)
